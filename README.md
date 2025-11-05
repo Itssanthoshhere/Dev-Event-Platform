@@ -19,6 +19,10 @@
   <h3>🚀 Dev Event Platform – Full-Stack Event Management App</h3>
   <b>Next.js 16 powered event management and analytics platform</b> that simplifies event creation, booking, and tracking.<br/>
   Built with <b>Next.js, TypeScript, MongoDB, Cloudinary, and PostHog</b> for a production-ready experience.<br/><br/>
+  <a href="https://dev-events-gray.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-brightgreen?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+  <br />
 
 </div>
 
