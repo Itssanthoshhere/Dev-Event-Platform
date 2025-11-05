@@ -3,6 +3,7 @@ import { v2 as cloudinary } from "cloudinary";
 
 import connectDB from "@/lib/mongodb";
 import Event from "@/database/event.model";
+import { IEvent } from "@/database/event.model";
 
 export async function POST(req: NextRequest) {
   try {
@@ -76,7 +77,7 @@ export async function GET() {
   try {
     await connectDB();
 
-    const events = await Event.find().sort({ createdAt: -1 });
+    const events = (await Event.find().sort({ createdAt: -1 })) as IEvent[];
 
     return NextResponse.json(
       { message: "Events fetched successfully", events },
